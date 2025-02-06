@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Tasks from "../../page/tasks/Tasks";
 import "./index.css";
 
 interface TaskProps {
@@ -8,30 +9,24 @@ interface TaskProps {
 }
 
 const TaskItem: React.FC<TaskProps> = ({ task, onEdit, onDelete }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="task-item">
       <div className="task-item-content">
-        <div className="task-item-title">
-          <span>{task.title}</span>
-        </div>
-
+        <button className="task-item-title" onClick={() => setIsOpen(!isOpen)}>
+          cписок: {task.title}
+        </button>
         <div className="task-item-btn-container">
-          <button
-            onClick={() => {
-              onEdit(task.id);
-            }}
-          >
-            Змінити
-          </button>
-          <button
-            onClick={() => {
-              onDelete(task.id);
-            }}
-          >
-            Видалити
-          </button>
+          <button onClick={() => onEdit(task.id)}>Змінити</button>
+          <button onClick={() => onDelete(task.id)}>Видалити</button>
         </div>
       </div>
+      {isOpen && (
+        <div className="task-details">
+          <Tasks />
+        </div>
+      )}
     </div>
   );
 };

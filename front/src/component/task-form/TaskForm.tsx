@@ -31,9 +31,9 @@ const TaskForm: React.FC<TaskFormProps> = ({ onSubmit, initialTitle = "" }) => {
           onChange={(e) => {
             setTitle(e.target.value);
           }}
-          placeholder="Нове завдання..."
+          placeholder="Створіть список..."
         />
-        <button type="submit">{initialTitle ? "Зберегти" : "Додати"}</button>
+        <button type="submit">{initialTitle ? "Зберегти" : "Сворити"}</button>
       </form>
     </div>
   );

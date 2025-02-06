@@ -1,0 +1,58 @@
+.tasks {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tasks > ul {
+  margin-top: 20px;
+}
+
+.task-li {
+  padding: 4px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.tasks > h2 {
+  text-align: center;
+}
+
+.form-tasks-add {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-tasks-add,
+.task-add {
+  margin-top: 10px;
+}
+
+.added-task {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.added-task > strong {
+  font-weight: 700;
+}
+
+.form-tasks-add > input {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+.task-del-btn {
+  margin-top: 10px;
+}
+
+.task-del-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}

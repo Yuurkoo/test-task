@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border: 1px solid red; */
 }
 
 .task-item-title {
@@ -12,6 +13,8 @@
   border: 1px solid rgb(179, 179, 179);
   border-radius: 8px;
   word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
 }
 
 .task-item-title > span {
