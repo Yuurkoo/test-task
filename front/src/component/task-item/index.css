@@ -1,0 +1,42 @@
+.task-item-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task-item-title {
+  width: 69%;
+  display: flex;
+  padding: 8px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.task-item-title > span {
+  display: block;
+  width: 100%;
+}
+
+.task-item-btn-container {
+  width: 29%;
+  padding: 2px;
+
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-item-btn-container > button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 8px;
+}
